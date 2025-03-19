@@ -90,12 +90,26 @@ nav ul li a {
   margin-bottom: 20px;
 }
 
+/* Carousel CTA Buttons */
+.cta-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .cta-button {
   background: #ff6600;
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #e65c00;
 }
 
 /* Navigation Arrows */
@@ -246,6 +260,16 @@ footer {
 
   .caption p {
     font-size: 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-button {
+    width: 100%;
+    text-align: center;
   }
 
   .contact-grid {
