@@ -311,15 +311,16 @@ footer {
 }
 /* About Us Section */
 .about {
-  padding: 50px 0;
+  padding: 60px 0;
   text-align: center;
-  background: #fff;
+  background: #f9f9f9; /* Light background for contrast */
 }
 
 .about h2 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: #333;
+  text-transform: uppercase; /* Uppercase for headings */
 }
 
 .about p {
@@ -328,24 +329,27 @@ footer {
   color: #555;
   max-width: 800px;
   margin: 0 auto 20px;
+  text-align: justify; /* Justify text for better readability */
 }
 
 .about ul {
   text-align: left;
   max-width: 800px;
-  margin: 20px auto;
-  padding-left: 20px;
+  margin: 30px auto;
+  padding-left: 40px; /* Increased padding for better alignment */
+  list-style-type: disc; /* Bullet points for list items */
 }
 
 .about ul li {
   font-size: 1.1rem;
   line-height: 1.8;
   color: #555;
-  margin-bottom: 10px;
+  margin-bottom: 15px; /* Increased margin for better spacing */
 }
 
 .about strong {
   color: #333;
+  font-weight: 600; /* Slightly bolder for emphasis */
 }
 
 /* Responsive Design for About Us */
@@ -356,9 +360,14 @@ footer {
 
   .about p {
     font-size: 1rem;
+    text-align: left; /* Left-align text on smaller screens */
   }
 
   .about ul li {
     font-size: 1rem;
+  }
+
+  .about ul {
+    padding-left: 20px; /* Reduce padding on smaller screens */
   }
 }
