@@ -1,43 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adam Logistics</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-</head>
-<body>
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <div class="header-content">
-        <img src="assets/logo.png" alt="Adam Logistics Logo" class="logo">
-        <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+<!-- Hero Section: Carousel -->
+  <section id="home" class="hero">
+    <div class="carousel">
+      <!-- Slide 1 -->
+      <div class="slide active">
+        <img src="assets/hero1.jpg" alt="Slide 1">
+        <div class="caption">
+          <h1>Fast and Reliable Transportation</h1>
+          <p>We deliver your goods safely and on time, every time.</p>
+          <a href="#quote" class="cta-button">Get a Quote</a>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="slide">
+        <img src="assets/hero2.jpg" alt="Slide 2">
+        <div class="caption">
+          <h1>Secure Warehousing Solutions</h1>
+          <p>Store your goods in our state-of-the-art facilities.</p>
+          <a href="#quote" class="cta-button">Learn More</a>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="slide">
+        <img src="assets/hero3.jpg" alt="Slide 3">
+        <div class="caption">
+          <h1>Global Customs Clearance</h1>
+          <p>We handle all customs formalities for international shipments.</p>
+          <a href="#quote" class="cta-button">Contact Us</a>
+        </div>
+      </div>
+      <!-- Navigation Arrows -->
+      <button class="arrow prev" onclick="prevSlide()">&#10094;</button>
+      <button class="arrow next" onclick="nextSlide()">&#10095;</button>
+      <!-- Dots Navigation -->
+      <div class="dots">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
       </div>
     </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="container">
-      <h1>Your Trusted Logistics Partner</h1>
-      <p>Fast, Reliable, and Efficient Logistics Solutions</p>
-      <a href="#quote" class="cta-button">Get a Quote</a>
-    </div>
-    <img
-      src="assets/hero-image.jpg"
-      srcset="assets/hero-image-small.jpg 480w, assets/hero-image-medium.jpg 800w, assets/hero-image.jpg 1920w"
-      alt="Adam Logistics Hero Image"
-      class="hero-image"
-    >
   </section>
 
   <!-- About Us -->
