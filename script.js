@@ -30,8 +30,8 @@ function goToSlide(index) {
   showSlide(currentSlide);
 }
 
-// Auto-scroll every 5 seconds
-setInterval(nextSlide, 3000);
+// Auto-scroll every 2 seconds
+setInterval(nextSlide, 2000);
 
 // Initialize the first slide
 showSlide(currentSlide);
