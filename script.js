@@ -35,3 +35,16 @@ setInterval(nextSlide, 3000);
 
 // Initialize the first slide
 showSlide(currentSlide);
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Ensure each button retains its default link behavior
+    document.querySelectorAll(".cta-button").forEach(button => {
+        button.addEventListener("click", function (event) {
+            let href = button.getAttribute("href");
+            if (!href.startsWith("mailto:") && !href.startsWith("tel:") && !href.startsWith("https://wa.me/")) {
+                event.preventDefault(); // Prevent overriding
+            }
+        });
+    });
+});
+
