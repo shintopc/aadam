@@ -4,169 +4,210 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adam Logistics</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
   <!-- Header -->
   <header>
-    <div class="container">
-      <div class="header-content">
-        <img src="assets/logo.png" alt="Adam Logistics Logo" class="logo">
-        <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/logo.png" alt="Adam Logistics Logo" class="logo" style="height: 70px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
           </ul>
-        </nav>
+        </div>
       </div>
-    </div>
+    </nav>
   </header>
 
   <!-- Hero Section: Carousel -->
-  <section id="home" class="hero">
-    <div class="carousel">
-      <!-- Slide 1 -->
-      <div class="slide active">
-        <img src="assets/hero1.png" alt="Slide 1">
-        <div class="caption">
-          <h1>Fast and Reliable Transportation</h1>
-          <p>We deliver your goods safely and on time, every time.</p>
-          <div class="cta-buttons">
-            <a href="tel:+911234567890" class="cta-button">Call Us</a>
-            <a href="https://wa.me/911234567890" class="cta-button">WhatsApp Us</a>
-            <a href="mailto:info@adamlogistics.com" class="cta-button">Email Us</a>
-          </div>
+<section id="home" class="hero">
+  <div class="carousel">
+    <!-- Slide 1 -->
+    <div class="slide active">
+      <img src="assets/hero1.png" alt="Slide 1">
+      <div class="caption">
+        <h1>Fast and Reliable Transportation</h1>
+        <p>We deliver your goods safely and on time, every time.</p>
+        <div class="cta-buttons">
+          <a href="tel:+911234567890" class="cta-button" style="background-color: #007bff;">Call Us</a> <!-- Blue -->
         </div>
       </div>
-      <!-- Slide 2 -->
-      <div class="slide">
-        <img src="assets/hero2.png" alt="Slide 2">
-        <div class="caption">
-          <h1>Secure Warehousing Solutions</h1>
-          <p>Store your goods in our state-of-the-art facilities.</p>
-          <div class="cta-buttons">
-            <a href="tel:+911234567890" class="cta-button">Call Us</a>
-            <a href="https://wa.me/911234567890" class="cta-button">WhatsApp Us</a>
-            <a href="mailto:info@adamlogistics.com" class="cta-button">Email Us</a>
-          </div>
+    </div>
+    <!-- Slide 2 -->
+    <div class="slide">
+      <img src="assets/hero2.png" alt="Slide 2">
+      <div class="caption">
+        <h1>Secure Warehousing Solutions</h1>
+        <p>Store your goods in our state-of-the-art facilities.</p>
+        <div class="cta-buttons">
+          <a href="https://wa.me/911234567890" class="cta-button" style="background-color: #28a745;">WhatsApp Us</a> <!-- Green -->
         </div>
       </div>
-      <!-- Slide 3 -->
-      <div class="slide">
-        <img src="assets/hero3.png" alt="Slide 3">
-        <div class="caption">
-          <h1>Global Customs Clearance</h1>
-          <p>We handle all customs formalities for international shipments.</p>
-          <div class="cta-buttons">
-            <a href="tel:+911234567890" class="cta-button">Call Us</a>
-            <a href="https://wa.me/911234567890" class="cta-button">WhatsApp Us</a>
-            <a href="mailto:info@adamlogistics.com" class="cta-button">Email Us</a>
-          </div>
+    </div>
+    <!-- Slide 3 -->
+    <div class="slide">
+      <img src="assets/hero3.png" alt="Slide 3">
+      <div class="caption">
+        <h1>Global Customs Clearance</h1>
+        <p>We handle all customs formalities for international shipments.</p>
+        <div class="cta-buttons">
+          <a href="mailto:info@adamlogistics.com" class="cta-button" style="background-color: #dc3545;">Email Us</a> <!-- Red -->
         </div>
       </div>
-      <!-- Navigation Arrows -->
-      <button class="arrow prev" onclick="prevSlide()">&#10094;</button>
-      <button class="arrow next" onclick="nextSlide()">&#10095;</button>
-      <!-- Dots Navigation -->
-      <div class="dots">
-        <span class="dot active" onclick="goToSlide(0)"></span>
-        <span class="dot" onclick="goToSlide(1)"></span>
-        <span class="dot" onclick="goToSlide(2)"></span>
+    </div>
+    <!-- Navigation Arrows -->
+    <button class="arrow prev" onclick="prevSlide()">&#10094;</button>
+    <button class="arrow next" onclick="nextSlide()">&#10095;</button>
+    <!-- Dots Navigation -->
+    <div class="dots">
+      <span class="dot active" onclick="goToSlide(0)"></span>
+      <span class="dot" onclick="goToSlide(1)"></span>
+      <span class="dot" onclick="goToSlide(2)"></span>
+    </div>
+  </div>
+</section>
+  <!-- About Us -->
+  <section id="about" class="about py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">About Us</h2>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <p class="text-justify">Welcome to <strong>Adam Logistics</strong>, your trusted partner in logistics and supply chain solutions. Since our inception in 2010, we have been committed to delivering excellence in transportation, warehousing, and global customs clearance services.</p>
+          <p class="text-justify">At Adam Logistics, we understand that every shipment is more than just a package—it's a promise to your customers. That's why we prioritize <strong>safety, reliability, and efficiency</strong> in every step of our operations. Whether it's local transportation or international shipping, we ensure your goods reach their destination on time and in perfect condition.</p>
+          <p class="text-justify">Our team of experienced professionals is dedicated to providing personalized solutions tailored to your business needs. With a global network of partners and state-of-the-art technology, we offer seamless logistics services that help you stay ahead in a competitive market.</p>
+          <p class="text-justify">Why choose us? Here are a few reasons:</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>24/7 Customer Support:</strong> We're always here to assist you, no matter the time or place.</li>
+            <li class="list-group-item"><strong>Competitive Pricing:</strong> Affordable solutions without compromising on quality.</li>
+            <li class="list-group-item"><strong>Global Reach:</strong> We handle shipments across the globe with ease.</li>
+            <li class="list-group-item"><strong>Sustainability:</strong> We are committed to eco-friendly practices to reduce our carbon footprint.</li>
+          </ul>
+          <p class="text-justify mt-4">At Adam Logistics, we don't just move goods—we build relationships. Let us take care of your logistics needs so you can focus on growing your business.</p>
+        </div>
       </div>
     </div>
   </section>
 
-<!-- About Us -->
-<section id="about" class="about">
-  <div class="container">
-    <h2>About Us</h2>
-    <p>Welcome to <strong>Adam Logistics</strong>, your trusted partner in logistics and supply chain solutions. Since our inception in 2010, we have been committed to delivering excellence in transportation, warehousing, and global customs clearance services.</p>
-    <p>At Adam Logistics, we understand that every shipment is more than just a package—it's a promise to your customers. That's why we prioritize <strong>safety, reliability, and efficiency</strong> in every step of our operations. Whether it's local transportation or international shipping, we ensure your goods reach their destination on time and in perfect condition.</p>
-    <p>Our team of experienced professionals is dedicated to providing personalized solutions tailored to your business needs. With a global network of partners and state-of-the-art technology, we offer seamless logistics services that help you stay ahead in a competitive market.</p>
-    <p>Why choose us? Here are a few reasons:</p>
-    <ul>
-      <li><strong>24/7 Customer Support:</strong> We're always here to assist you, no matter the time or place.</li>
-      <li><strong>Competitive Pricing:</strong> Affordable solutions without compromising on quality.</li>
-      <li><strong>Global Reach:</strong> We handle shipments across the globe with ease.</li>
-      <li><strong>Sustainability:</strong> We are committed to eco-friendly practices to reduce our carbon footprint.</li>
-    </ul>
-    <p>At Adam Logistics, we don't just move goods—we build relationships. Let us take care of your logistics needs so you can focus on growing your business.</p>
-  </div>
-</section>
   <!-- Services -->
-  <section id="services" class="services">
+  <section id="services" class="services py-5">
     <div class="container">
-      <h2>Our Services</h2>
-      <div class="service-grid">
-        <div class="service-item">
-          <img src="assets/service1.png" alt="Transportation">
-          <h3>Transportation</h3>
-          <p>Efficient and reliable transportation services.</p>
+      <h2 class="text-center mb-4">Our Services</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/service1.png" class="card-img-top" alt="Transportation">
+            <div class="card-body">
+              <h5 class="card-title">Transportation</h5>
+              <p class="card-text">Efficient and reliable transportation services.</p>
+            </div>
+          </div>
         </div>
-        <div class="service-item">
-          <img src="assets/service2.png" alt="Warehousing">
-          <h3>Warehousing</h3>
-          <p>Secure and spacious warehousing solutions.</p>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/service2.png" class="card-img-top" alt="Warehousing">
+            <div class="card-body">
+              <h5 class="card-title">Warehousing</h5>
+              <p class="card-text">Secure and spacious warehousing solutions.</p>
+            </div>
+          </div>
         </div>
-        <div class="service-item">
-          <img src="assets/service3.png" alt="Express Delivery">
-          <h3>Express Delivery</h3>
-          <p>Fast and timely delivery services.</p>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/service3.png" class="card-img-top" alt="Express Delivery">
+            <div class="card-body">
+              <h5 class="card-title">Express Delivery</h5>
+              <p class="card-text">Fast and timely delivery services.</p>
+            </div>
+          </div>
         </div>
-        <div class="service-item">
-          <img src="assets/service4.png" alt="Customs Clearance">
-          <h3>Customs Clearance</h3>
-          <p>Smooth customs clearance for international shipments.</p>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/service4.png" class="card-img-top" alt="Customs Clearance">
+            <div class="card-body">
+              <h5 class="card-title">Customs Clearance</h5>
+              <p class="card-text">Smooth customs clearance for international shipments.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="contact">
+  <section id="contact" class="contact py-5">
     <div class="container">
-      <h2>Contact Us</h2>
-      <div class="contact-grid">
-        <!-- Left Side: Google Maps -->
-        <div class="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.982855999892!2d76.3478663152875!3d9.93187687652063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0873e6b7d5e4b5%3A0x6b7c5b5b5b5b5b5b!2sNivedyam%20Building%2C%20Chalikkavattom%2C%20Vennala%20Kadappath%20Road%2C%20Ernakulam%2C%20Kerala%20682028%2C%20India!5e0!3m2!1sen!2sin!4v1633083083083!5m2!1sen!2sin"
-            width="100%"
-            height="400"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.982855999892!2d76.3478663152875!3d9.93187687652063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0873e6b7d5e4b5%3A0x6b7c5b5b5b5b5b5b!2sNivedyam%20Building%2C%20Chalikkavattom%2C%20Vennala%20Kadappath%20Road%2C%20Ernakulam%2C%20Kerala%20682028%2C%20India!5e0!3m2!1sen!2sin!4v1633083083083!5m2!1sen!2sin"
+              width="100%"
+              height="400"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
         </div>
-
-        <!-- Right Side: Contact Form and Details -->
-        <div class="contact-details">
-          <h3>Get in Touch</h3>
-          <p>48/1089D, Nivedyam Building, Chalikkavattom, Vennala Kadappath Road, Ernakulam, Kerala, 682028, India</p>
-          <p>Phone: +91 123 456 7890</p>
-          <p>Email: info@adamlogistics.com</p>
-     <form id="contact-form" action="https://formspree.io/f/movejjzd" method="POST">
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-       <input type="Mobile" name="mobile" placeholder="Your Mobile Number" required>
-  <textarea name="message" placeholder="Your Message" required></textarea>
-  <button type="submit">Send Message</button>
-</form>
+        <div class="col-md-6">
+          <div class="contact-details">
+            <h3>Get in Touch</h3>
+            <p>48/1089D, Nivedyam Building, Chalikkavattom, Vennala Kadappath Road, Ernakulam, Kerala, 682028, India</p>
+            <p>Phone: +91 123 456 7890</p>
+            <p>Email: info@adamlogistics.com</p>
+            <form id="contact-form" action="https://formspree.io/f/movejjzd" method="POST">
+              <div class="mb-3">
+                <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" name="mobile" placeholder="Your Mobile Number" required>
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" name="message" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <div class="container">
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
       <p>&copy; 2025 Adam Logistics. All rights reserved.</p>
     </div>
   </footer>
 
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
