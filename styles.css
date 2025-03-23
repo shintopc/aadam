@@ -333,6 +333,20 @@ footer {
   background: #f9f9f9 url('assets/about-bg.jpg') no-repeat center center;
   background-size: 40%; /* Adjust this value */
   color: #000; /* Black text */
+  position: relative;
+  z-index: 1;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('assets/about-bg.jpg') no-repeat center center/cover;
+  filter: brightness(0.8) contrast(1.2); /* Adjust brightness and contrast */
+  z-index: -1;
 }
 
 .about h2 {
@@ -370,3 +384,4 @@ footer {
   color: #000; /* Black strong text */
   font-weight: 600;
 }
+
